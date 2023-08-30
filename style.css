@@ -5,8 +5,8 @@
 body {
   margin: 10px;
   padding: 10px;
-  --font-family: "Quicksand", sans-serif;
-  --color: #f9f7fe;
+  font-family: var(--font-family);
+  color: var(--color);
 }
 
 .container {
@@ -53,20 +53,32 @@ input[type="text"] {
   padding: 12px 20px 12px 60px;
 }
 
+.rectangle-image-section {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
 .icon-nav {
   list-style: none;
-  margin: 0 0 0 10px;
-  padding: 0;
+  margin: 10px 0 0 10px;
+  padding: 10px 0;
   border-radius: 32px;
   background: #1a1e1f;
   width: 52px;
   height: 200px;
   flex: 1;
 }
-.playlist-icon {
-  animation-name: smart animate;
-  animation-timing-function: ease-out;
-  animation-duration: 300ms;
+
+.second-nav {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  border-radius: 32px;
+  background: #1a1e1f;
+  width: 52px;
+  height: 127px;
+  flex: 1;
 }
 
 .nav-link {
@@ -78,20 +90,8 @@ input[type="text"] {
   transition: background-color 0.3s ease;
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 5px;
-}
-
 .nav-link:hover {
   background-color: #555;
-}
-
-.rectangle-image-section {
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
 }
 
 .rectangle {
@@ -102,7 +102,7 @@ input[type="text"] {
   height: 373px;
   background-color: #609eaf;
   border-radius: 40px;
-  margin: 0 24pxs;
+  margin: 0 24px;
 }
 
 .rectangle-write-up {
@@ -212,5 +212,56 @@ input[type="text"] {
 }
 .top-chart {
   flex: 1;
-  padding: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.top-chart h6 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0 0 10px 5px;
+}
+
+.top-chart .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 417px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #1a1e1f;
+  padding: 0 16px;
+}
+
+.top-chart .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-chart .side-by-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-chart .heart-icon {
+  align-self: flex-end;
+}
+.top-chart div p {
+  margin: 2px;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.top-chart .heart-icon {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  padding: 10px;
+  border-radius: 20px;
 }
