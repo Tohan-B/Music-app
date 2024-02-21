@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
-canvas {
+#myCanvas {
   border: 1px solid black;
+  float: left;
+}
+
+#controls {
+  float: left;
 }
