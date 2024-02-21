@@ -1,4 +1,3 @@
-// useful to have them as global variables
 var canvas, ctx, w, h;
 var mousePos;
 
